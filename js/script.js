@@ -63,32 +63,32 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Trailer
-    let trailerSection = document.querySelector(".trailer"); 
-    if (!trailerSection) return; 
+    // // Trailer
+    // let trailerSection = document.querySelector(".trailer"); 
+    // if (!trailerSection) return; 
 
-    let trailerIframe = trailerSection.querySelector("iframe");
-    if (!trailerIframe) return; 
+    // let trailerIframe = trailerSection.querySelector("iframe");
+    // if (!trailerIframe) return; 
 
-    let videoURL = new URL(trailerIframe.src);
-    videoURL.searchParams.set("autoplay", "1"); 
-    videoURL.searchParams.set("mute", "1"); 
+    // let videoURL = new URL(trailerIframe.src);
+    // videoURL.searchParams.set("autoplay", "1"); 
+    // videoURL.searchParams.set("mute", "1"); 
     
-    function playTrailer(entries, observer) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                trailerIframe.src = videoURL.href;
-                observer.unobserve(trailerSection); 
-            }
-        });
-    }
+    // function playTrailer(entries, observer) {
+    //     entries.forEach(entry => {
+    //         if (entry.isIntersecting) {
+    //             trailerIframe.src = videoURL.href;
+    //             observer.unobserve(trailerSection); 
+    //         }
+    //     });
+    // }
 
-    let observer = new IntersectionObserver(playTrailer, {
-        root: null, 
-        threshold: 0.5, 
-    });
+    // let observer = new IntersectionObserver(playTrailer, {
+    //     root: null, 
+    //     threshold: 0.5, 
+    // });
 
-    observer.observe(trailerSection);
+    // observer.observe(trailerSection);
 
 
     // Scroll Reveal
@@ -170,3 +170,4 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.classList.toggle('access-mode');
     });
 });
+
