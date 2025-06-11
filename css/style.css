@@ -28,13 +28,18 @@ html, body {
 }
 
 body {
-    font-family: 'Pirata One', cursive;
+    font-family: Arial, sans-serif;
     font-weight: 500;
     background: #ffffff;
     color: #1e1e1e;
     margin: 0;
     padding: 0;
     text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6,
+.logo, .section-title {
+    font-family: 'Pirata One', cursive;
 }
 
 section {
@@ -71,7 +76,7 @@ section {
     color: #1e1e1e;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     transition: color 0.3s ease;
 }
 
@@ -743,7 +748,7 @@ footer {
 
     .nav a {
         margin: 0 10px;
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     .about-container {
@@ -801,7 +806,17 @@ body.access-mode {
     font-family: Arial, sans-serif !important;
     letter-spacing: 0.4px;
     line-height: 1.6;
-    font-size: 0.85em;
+}
+
+body.access-mode h1,
+body.access-mode h2,
+body.access-mode h3,
+body.access-mode h4,
+body.access-mode h5,
+body.access-mode h6,
+body.access-mode .logo,
+body.access-mode .section-title {
+    font-family: Arial, sans-serif !important;
 }
 
 /* PIXEL ART TO REAL AVATAR */
