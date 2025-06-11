@@ -1,16 +1,4 @@
-@font-face {
-    font-family: 'PixelifySans';
-    src: url('../assets/fonts/PixelifySans-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'PixelifySans';
-    src: url('../assets/fonts/PixelifySans-SemiBold.ttf') format('truetype');
-    font-weight: 600;
-    font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
 
 :root {
     --led-blue: #3B4CC0;
@@ -40,7 +28,7 @@ html, body {
 }
 
 body {
-    font-family: 'PixelifySans', sans-serif;
+    font-family: 'Pirata One', cursive;
     font-weight: 500;
     background: #ffffff;
     color: #1e1e1e;
